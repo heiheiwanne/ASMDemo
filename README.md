@@ -10,3 +10,5 @@ debug:
 3../gradlew build -p asmlib
 
 4../gradlew build -Dorg.gradle.demaon=false -Dorg.gradle.debug=true
+
+5.select remote click debug

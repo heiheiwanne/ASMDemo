@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.demo.lib.annotations.Cost;
+
 public class MainActivity extends AppCompatActivity {
 
     private static int MESSAGE_KEY = 0x2019;
@@ -29,9 +31,11 @@ public class MainActivity extends AppCompatActivity {
         sendMessage(getClass().getSimpleName());
     }
 
-    private void sendMessage(String string) {
+    @Cost
+    private String sendMessage(String string) {
         Message message = new Message();
         message.what =MESSAGE_KEY;
         sHandler.sendMessage(message);
+        return string;
     }
 }

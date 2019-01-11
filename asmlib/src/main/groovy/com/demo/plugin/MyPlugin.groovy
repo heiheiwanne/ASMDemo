@@ -20,5 +20,6 @@ class MyPlugin implements Plugin<Project> {
 
         Logger.setLogger(project.logger) //设置logger
         project.extensions.getByType(AppExtension).registerTransform(new MyTransform())
+        project.extensions.getByType(AppExtension).registerTransform(new CostTransform())
     }
 }

@@ -5,6 +5,7 @@ dependencies {
     implementation gradleApi()//gradle sdk
     implementation localGroovy()//groovy sdk
     implementation 'com.android.tools.build:gradle:3.2.1'
+    implementation project(":annotations")
 }
 sourceCompatibility = "1.8"
 targetCompatibility = "1.8"

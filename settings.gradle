@@ -1,1 +1,1 @@
-include ':app', ':asmlib'
+include ':app', ':asmlib', ':annotations'
